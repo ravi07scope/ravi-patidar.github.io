@@ -689,31 +689,40 @@ footer a:hover{opacity:0.7}
       </div>
     </div>
     <form action="https://formsubmit.co/patidarravi599@gmail.com" method="POST">
-      <div class="form-row">
-        <div class="form-group">
-          <label>Your Name</label>
-          <input type="text" placeholder="John Doe">
-        </div>
-        <div class="form-group">
-          <label>Phone Number</label>
-          <input type="tel" placeholder="+91 XXXXX XXXXX">
-        </div>
-      </div>
-      <div class="form-group">
-        <label>Email</label>
-        <input type="email" placeholder="you@example.com">
-      </div>
-      <div class="form-group">
-        <label>Subject</label>
-        <input type="text" placeholder="Job Opportunity / Project">
-      </div>
-      <div class="form-group">
-        <label>Your Message</label>
-        <textarea placeholder="Tell me about your project or opportunity..."></textarea>
-      </div>
-        <button class="form-submit">  
-          SEND MESSAGE &nbsp;<i class="fas fa-paper-plane"></i>
-        </button>
+
+  <div class="form-row">
+    <div class="form-group">
+      <label>Your Name</label>
+      <input type="text" name="name" placeholder="Your Name" required>
+    </div>
+
+    <div class="form-group">
+      <label>Phone Number</label>
+      <input type="tel" name="phone" placeholder="+91 XXXXX XXXXX">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>Email</label>
+    <input type="email" name="email" placeholder="you@example.com" required>
+  </div>
+
+  <div class="form-group">
+    <label>Subject</label>
+    <input type="text" name="subject" placeholder="Job Opportunity / Project">
+  </div>
+
+  <div class="form-group">
+    <label>Your Message</label>
+    <textarea name="message"
+              placeholder="Tell me about your project or opportunity..."
+              required></textarea>
+  </div>
+
+  <button type="submit" class="form-submit">
+    SEND MESSAGE <i class="fas fa-paper-plane"></i>
+  </button>
+</form>
       </div>
     </div>
   </div>
